@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LogIN</title>
+    <link rel="stylesheet" href="login.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h2>Fill out this field to view Dashboard</h2>
+      <form action="Dashboard.html" class="form" id="form">
+        <div class="formCard">
+          <input
+            type="text"
+            id="username"
+            placeholder="enter your name"
+            onkeypress="keyTime()" />
+          <label id="label1" for="username">Full Name</label>
+          <small id="small1"></small>
+        </div>
+        <div class="formCard">
+          <input
+            type="email"
+            id="userEmail"
+            placeholder="enter your email"
+            onkeypress="keyTime1()" />
+          <label id="label2" for="userEmail">Email</label>
+          <small id="small2"></small>
+        </div>
+        <button id="btn">Enter</button>
+      </form>
+    </div>
+    <script src="login.js"></script>
+  </body>
+</html>
